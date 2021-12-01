@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.bannerAd {
+	width: 1200px;
+	height: 400px;
+	margin: auto;
+}
+
+.bannerAd .adSlide {
+	display: flex;
+	width: 1100px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+.bannerAd .adSlide a {
+	position: relative;
+}
+
+.bannerAd .adSlide img {
+	display: block;
+	border-radius: 50px;
+	opacity: .9;
+}
+
+.bannerAd .adSlide a:hover img{
+	opacity: 1;
+}
+
+.bannerAd .page_btn {
+	text-align: center;
+	position: relative;
+	top: 25px;
+	width: 100%;
+}
+
+
+.bannerAd .page_btn div {
+	margin: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 2px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.bannerAd .page_btn div.active {
+	background-color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+#loginAndJoin {
+	margin: auto;
+	padding: 25px 0;
+	width: 1200px;
+}
+
+.tabMenu {
+	position: relative;
+	left: 60px;
+}
+
+.tabMenu li {
+	float: left;
+	width: 200px;
+	height: 95px;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+
+.tabMenu li:first-child {
+	border-right: none;
+}
+
+.tabMenu li.active {
+	border-bottom: none;
+	font-size: 20px;
+	background: rgb(250, 250, 250);
+	border-top: 2px solid rgb(6, 119, 207);
+}
+
+.tab_contents {
+	clear: both;
+	margin: auto;
+	width: 90%;
+	height: 600px;
+	text-align: center;
+	background: rgb(250, 250, 250);
+	border: 1px solid #ddd;
+	border-top: none;
+	border-bottom: 2px solid black;
+	overflow: auto;
+}
+
+#login table, #join table {
+	position: relative;
+	left: 50%;
+	top: 60px;
+	transform: translate(-50%, 0);
+}
+
+.login_text {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+#userId, #userPw {
+	margin: 30px;
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 30px;
+	color: #444;
+	border-bottom: 2px solid gray;
+}
+
+#loginBtn {
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+	border: none;
+	border-radius: 5px;
+	border-bottom: 2px solid #aaa;
+	background: rgb(6, 119, 207);
+	font-size: 23px;
+	font-weight: bold;
+	/* font-style: italic; */
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+#findId, #findPw {
+	position: relative;
+	top: 15px;
+	left: 78px;
+	width: 220px;
+	height: 35px;
+	margin: 0 5px;
+	border: none;
+	border-radius: 5px;
+	border-bottom: 2px solid #aaa;
+	background: rgb(6, 119, 207);
+	font-size: 18px;
+	font-weight: bold;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+#loginBtn:active, #findId:active, #findPw:active {
+	opacity: .8;
+}
+
+#login_logo {
+	width: 150px;
+	position: relative;
+	top: 235px;
+	right: 670px;
+	opacity: .7;
+}
+
+h6 {
+	float: left;
+	font-size: 25px;
+	margin: 0 8px;
+}
+
+h3 {
+	float: left;
+	font-size: 20px;
+	margin: 10px 0;
+	margin-right: 10px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 370px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 25px;
+	color: #444;
+	border-bottom: 2px solid gray;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+input[type="text"].redBorder{
+	border: 2px solid red;
+}
+.floatBox {
+	display: flex;
+	width: 300px;
+}
+
+#mailId, #mailAddress {
+	width: 200px;
+}
+#mailAddress{
+	margin-right: 40px;
+}
+
+#join p {
+	text-align: center;
+	margin-top: 10px;
+	color: gray;
+}
+
+#join p.redText{
+	color:red;
+}
+
+
+.atSign {
+	font-size: 20px;
+	color: #444;
+}
+
+input[type="button"], input[type="submit"] {
+	width: 150px;
+	height: 35px;
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 5px;
+	border-bottom: 2px solid #aaa;
+	background-color: rgb(6, 119, 207);
+	font-size: 17px;
+	font-weight: bold;
+	color: whitesmoke;
+}
+
+
+input[type="button"]:active, input[type="submit"]:active {
+	opacity: .7;
+}
+
+#terms {
+	width: 70px;
+	height: 25px;
+	margin: 12px 0;
+	float: left;
+	font-weight: 400;
+	font-size: 14px;
+	background-color: #aaa;
+	border-bottom: 1px solid #444;
+}
+
+#joinOk {
+	width: 250px;
+	height: 40px;
+	margin-top: 30px;
+	font-size: 23px;
+}
+
+hr {
+	background-color: #aaa;
+	height: 3px;
+	margin: 20px 0;
+}
+
+.radioStyle {
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+input[type="radio"] {
+	margin: 20px;
+	margin-right: 5px;
+}
+
+#join #login_logo {
+	right: 430px;
+	top: 80px;
+}
+.centerBtn{
+	text-align: center;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .7);
+	display: none;
+}
+
+.modal_contents {
+	width: 500px;
+	height: 550px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: none;
+}
+
+#modal_findId p, #modal_findPw p {
+	padding: 8px;
+	font-size: 15px;
+	background: #eee;
+}
+
+#modal_findPw2 p:nth-child(2) {
+	background: none;
+	margin: 30px 0 0 60px;
+}
+
+#modal_findId p:last-child {
+	background: none;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#findId_name, #findId_birth, #findId_mail, #findPw_id, #findPw_mail,
+	#resetPw_pw, #resetPw_pwOk {
+	width: 200px;
+	height: 35px;
+	background: rgb(250, 250, 250);
+	margin: 20px 10px;
+	font-size: 20px;
+}
+
+#findId_ok, #findPw_ok, #resetPw_ok {
+	margin: 30px 65px;
+	background: #ddd;
+	border: none;
+	color: black;
+}
+
+#modal_findId table, #modal_findPw table {
+	position: relative;
+	top: 60px;
+	left: 110px;
+}
+
+#modal_findPw table {
+	top: 80px;
+}
+
+#modal_terms p {
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
+	border-bottom: 1px solid black;
+}
+
+.termContents {
+	width: 90%;
+	height: 85%;
+	margin: 5%;
+	overflow: auto;
+}
+
+.termContents span {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.modalClose {
+	font-size: 20px;
+	margin-bottom: 2px;
+	float: right;
+	cursor: pointer;
+}
+
+.findPwContents {
+	display: none;
+}
+
+.findPwContents.active {
+	display: block;
+}

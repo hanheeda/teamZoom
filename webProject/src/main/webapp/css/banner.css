@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.slideList {
+	position: relative;
+	overflow: hidden;
+	width: 1200px;
+	height: 800px;
+	margin: auto;
+}
+
+.slideImg img {
+	width: 1200px;
+	height: 900px;
+	position: absolute;
+}
+
+.slideList h2 {
+	position: absolute;
+	left: 39%;
+	font-weight: 600;
+	top: 350px;
+	color: white;
+}
+.slideList h1 {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 400px;
+	color: rgb(135, 192, 206);
+	background: rgba(255, 255, 255, 0.7);
+	padding: 10px 30px;
+	border-radius: 25px;
+}

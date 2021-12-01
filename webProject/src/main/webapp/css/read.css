@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.readmodalWrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 11;
+}
+.readmodalWrap.open{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.readmodalWrap .container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.readmodalWrap .readForm {
+	width: 800px;
+	height: 600px;
+	background-color: white;
+	border-radius: 10px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	box-sizing: border-box;
+	padding: 20px 0;
+	line-height: 23px;
+	border: 2px solid #aaa;
+}
+
+.readmodalWrap .line {
+	border-bottom: 2px solid black;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.readmodalWrap h2 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.readmodalWrap .close {
+	position: relative;
+	float: right;
+	*display: inline;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.readmodalWrap .close:after {
+	content: "\00d7";
+	font-size: 25pt;
+	line-height: 45px;
+}
+
+.readmodalWrap .readForm .contents {
+	width: 34%;
+	position: absolute;
+	border: 2px solid black;
+	margin-left: 10px;
+	height: 80%;
+	margin-top: -48px;
+	top: 140px;
+	right: 15px;
+	text-align: left;
+}
+
+.readmodalWrap .readForm .contentsHead {
+	height: 8%;
+	font-size: 20px;
+	font-weight: 600;
+	padding-top: 20px;
+	border-bottom: 2px solid black;
+}
+
+.readmodalWrap .readForm #userNickname {
+	float: left;
+	width: 65%;
+	margin-left: 5px;
+	font-size: 17px;
+}
+
+.readmodalWrap .readForm .thumbs {
+	float: left;
+}
+
+.readmodalWrap .readForm .contentsBody {
+	margin-top: 10px;
+	height: 70%;
+	border-bottom: 2px solid black;
+}
+
+.readmodalWrap .readForm #txtMain {
+	resize: none;
+	overflow-y: scroll;
+	border: none;
+	height: 100%;
+	outline: none;
+	width: 100%;
+	background: white;
+}
+
+.readmodalWrap .readForm #txtSub {
+	resize: none;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+
+.readmodalWrap .frames {
+	position: absolute;
+	box-shadow: 0 0 5px #000;
+	width: 480px;
+	height: 480px;
+	border: 2px solid black;
+	margin-top: -48px;
+	top: 140px;
+	left: 15px;
+}
+
+.readmodalWrap .slider {
+	width: 480px;
+	height: 460px;
+}
+
+.readmodalWrap .slider img {
+	width: 480px;
+	height: 460px;
+}
+
+.readBtn {
+	background: white;
+	/* border: 2px solid rgb(6, 119, 207); */
+	border: none;
+	border-radius: 5px;
+	background: #eee;
+	color: #fff;
+	padding: 3px 5px;
+	cursor: pointer;
+}
+
+.readBtn span {
+	font-size: 12px;
+	font-weight: 600;
+	color: #000;
+}
+
+.readBtn:hover span {
+	color: rgb(6, 119, 207);
+}
+
+.readBtn:last-child:hover span {
+	color: rgb(214, 67, 66);
+}
+
+.readBtn:active {
+	opacity: .7;
+}
+
+#txtMain {
+	width: 100%;
+	height: 100%;
+}
+
+pre {
+	white-space: pre-wrap;
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.pageMerit {
+	margin: auto;
+	width: 1200px;
+	height: 450px;
+}
+
+.pageMerit ul {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+
+.pageMerit ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.pageMerit ul li {
+	float: left;
+	width: 33.3%;
+	height: 100%;
+}
+
+.pageMerit img {
+	width: 200px;
+	margin: 40px 100px;
+	opacity: .9;
+}
+
+.merit_text {
+	text-align: center;
+}
+
+.merit_text h2 {
+	margin-bottom: 30px;
+}
+
+.merit_text span {
+	color: #666;
+	font-weight: 500;
+	font-size: 17px;
+}
